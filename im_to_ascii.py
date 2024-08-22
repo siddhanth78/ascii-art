@@ -11,7 +11,7 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 new_width = 600
 
 aspect_ratio = w / h
-new_height = int(new_width*aspect_ratio)
+new_height = int(new_width/aspect_ratio)
 
 resized_image = cv2.resize(image, (new_width, new_height))
 
